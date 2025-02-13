@@ -34,13 +34,11 @@ jobs:
 
       - name: Build library
         run: ./gradlew build
-        with:
-          working-directory: ButtonBoxLib
+        working-directory: ButtonBoxLib
 
       - name: Publish library
         run: ./gradlew publish
-        with:
-          working-directory: ButtonBoxLib
+        working-directory: ButtonBoxLib
         env:
           repoUrl: ${{ github.workspace }}/repos
 
