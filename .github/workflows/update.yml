@@ -40,7 +40,7 @@ jobs:
         run: ./gradlew publish
         working-directory: ButtonBoxLib
         env:
-          repoUrl: ${{ github.workspace }}/repos
+          mavenRepo: ${{ github.workspace }}/repos
 
       - name: Update repository
         run: |
