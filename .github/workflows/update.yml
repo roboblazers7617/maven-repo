@@ -25,16 +25,19 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Clone library repository
-        run: |
-          gh repo clone roboblazers7617/${{ github.event.client_payload.libraryName }}
+        uses: actions/checkout@v4
+        with:
+          repository: roboblazers7617/${{ github.event.client_payload.libraryName }}
+          path: library-repository
+          ref: ${{ github.event.client_payload.ref }}
 
       - name: Build library
         run: ./gradlew build
-        working-directory: ${{ github.event.client_payload.libraryName }}
+        working-directory: library-repository
 
       - name: Publish library
         run: ./gradlew publish
-        working-directory: ${{ github.event.client_payload.libraryName }}
+        working-directory: library-repository
         env:
           mavenRepo: ${{ github.workspace }}/repos
 
