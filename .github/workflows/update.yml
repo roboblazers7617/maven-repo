@@ -1,12 +1,8 @@
 name: Update vendordep
 
 on:
-  workflow_dispatch:
-    inputs:
-      releaseVersion:
-        description: "Release version number"
-        type: string
-        required: true
+  repository_dispatch:
+    types: [publish_update]
 
 jobs:
   update:
@@ -15,7 +11,7 @@ jobs:
       contents: write
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      releaseVersion: ${{ inputs.releaseVersion }}
+      releaseVersion: ${{ github.event.client_payload.releaseVersion }}
 
     steps:
       - uses: actions/checkout@v4
@@ -30,15 +26,15 @@ jobs:
 
       - name: Clone library repository
         run: |
-          gh repo clone roboblazers7617/ButtonBoxLib
+          gh repo clone roboblazers7617/${{ github.event.client_payload.libraryName }}
 
       - name: Build library
         run: ./gradlew build
-        working-directory: ButtonBoxLib
+        working-directory: ${{ github.event.client_payload.libraryName }}
 
       - name: Publish library
         run: ./gradlew publish
-        working-directory: ButtonBoxLib
+        working-directory: ${{ github.event.client_payload.libraryName }}
         env:
           mavenRepo: ${{ github.workspace }}/repos
 
@@ -47,5 +43,5 @@ jobs:
           git config --global user.name "BlazerBot 7617"
           git config --global user.email "188250476+blazerbot-7617[bot]@users.noreply.github.com"
           git add repos/.
-          git commit -m "Upgrading ButtonBoxLib to ${{ inputs.releaseVersion }}"
+          git commit -m "Upgrading ${{ github.event.client_payload.libraryName }} to ${{ github.event.client_payload.releaseVersion }}"
           git push
