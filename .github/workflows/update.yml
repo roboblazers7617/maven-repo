@@ -44,7 +44,7 @@ jobs:
 
       - name: Update repository
         run: |
-          git config --global user.name "blazerbot-7617[bot]"
+          git config --global user.name "BlazerBot 7617"
           git config --global user.email "188250476+blazerbot-7617[bot]@users.noreply.github.com"
           git add repos/.
           git commit -m "Upgrading ButtonBoxLib to ${{ inputs.releaseVersion }}"
