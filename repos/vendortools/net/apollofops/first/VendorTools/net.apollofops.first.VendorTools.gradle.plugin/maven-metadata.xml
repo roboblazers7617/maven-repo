@@ -3,10 +3,12 @@
   <groupId>net.apollofops.first.VendorTools</groupId>
   <artifactId>net.apollofops.first.VendorTools.gradle.plugin</artifactId>
   <versioning>
-    <latest>2025.0.1-SNAPSHOT</latest>
+    <latest>2025.0.2</latest>
+    <release>2025.0.2</release>
     <versions>
       <version>2025.0.1-SNAPSHOT</version>
+      <version>2025.0.2</version>
     </versions>
-    <lastUpdated>20250221035042</lastUpdated>
+    <lastUpdated>20250221041919</lastUpdated>
   </versioning>
 </metadata>
