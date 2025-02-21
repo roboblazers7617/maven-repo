@@ -11,7 +11,6 @@ jobs:
     outputs:
       git-name: '${{ steps.app-token.outputs.app-slug }}[bot]'
       git-email: '${{ steps.get-user-id.outputs.user-id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com'
-      github-token: ${{ steps.app-token.outputs.token }}
 
     steps:
       - name: Generate an authentication token
@@ -30,7 +29,7 @@ jobs:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
 
   update:
-    uses: CoffeeCoder1/VendorTools/.github/workflows/update-maven.yml@8efe9ea47ba369048d36c56a456f955a60695ac3
+    uses: CoffeeCoder1/VendorTools/.github/workflows/update-maven.yml@4f9997a0e5026c685892d510ff537c6c2e69c17e
     needs: [generate-token]
 
     permissions:
@@ -42,5 +41,6 @@ jobs:
       git-name: ${{ needs.generate-token.outputs.git-name }}
       git-email: ${{ needs.generate-token.outputs.git-email }}
       client-payload: ${{ github.event.client_payload }}
+      github-app-id: ${{ vars.BLAZER_BOT_APP_ID }}
     secrets:
-      github-token: ${{ needs.generate-token.outputs.github-token }}
+      github-app-private-key: ${{ secrets.BLAZER_BOT_PRIVATE_KEY }}
