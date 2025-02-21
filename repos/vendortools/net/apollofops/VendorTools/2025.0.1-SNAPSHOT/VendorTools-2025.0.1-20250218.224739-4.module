@@ -1,0 +1,100 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.apollofops",
+    "module": "VendorTools",
+    "version": "2025.0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "VendorTools-2025.0.1-SNAPSHOT.jar",
+          "url": "VendorTools-2025.0.1-SNAPSHOT.jar",
+          "size": 14063,
+          "sha512": "5f0a40765d5f1a3c117759dc070e303d75b9d89f98a3b1b947569194eb54b98c691cab102a2a8f8460967369913e204d4154ed02abc063938de0bacf697f56a4",
+          "sha256": "cb58906b37188b22c588c5d67dd6c58660a2a869112ff6d8f61603e9f44505c0",
+          "sha1": "8095e845509ceb853f3cae70a176ee0c520d6259",
+          "md5": "921ea34b2cc1fc3ea625bbe033a39056"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "VendorTools-2025.0.1-SNAPSHOT.jar",
+          "url": "VendorTools-2025.0.1-SNAPSHOT.jar",
+          "size": 14063,
+          "sha512": "5f0a40765d5f1a3c117759dc070e303d75b9d89f98a3b1b947569194eb54b98c691cab102a2a8f8460967369913e204d4154ed02abc063938de0bacf697f56a4",
+          "sha256": "cb58906b37188b22c588c5d67dd6c58660a2a869112ff6d8f61603e9f44505c0",
+          "sha1": "8095e845509ceb853f3cae70a176ee0c520d6259",
+          "md5": "921ea34b2cc1fc3ea625bbe033a39056"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "VendorTools-2025.0.1-SNAPSHOT-javadoc.jar",
+          "url": "VendorTools-2025.0.1-SNAPSHOT-javadoc.jar",
+          "size": 106001,
+          "sha512": "c39a3fe2a8d0aaa312f6246efc2a83358a8db96c62678e000772e7ec79ea924a72a20f9f23ddebac5e6d11edc2e572c9ed97f253300ee4d5b198a8f864caae82",
+          "sha256": "900489e9d6547e02a76f60354d6da7f04e66e441a915534e3525ccb319f3ed8a",
+          "sha1": "62296190aded822fd1566f0b6c96ca8fd7970db5",
+          "md5": "ab0448dc77cc0eb28f0904f149ca704a"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "VendorTools-2025.0.1-SNAPSHOT-sources.jar",
+          "url": "VendorTools-2025.0.1-SNAPSHOT-sources.jar",
+          "size": 6424,
+          "sha512": "3516c0e6bcf28045fdd26f715aff8afac1991ddb6d2caad3acf2b73ef0716116f2bdd694ba1ea74260de39156c81369131ff3c333c04d7521ef71973c7dbff18",
+          "sha256": "9abb0015d0c4f13b0b7de6e699aaa271db4b8fac4dbff107cb3e78bd33cacb0e",
+          "sha1": "4fc9c1292431eef2aa978071ff5dfe7e986c4824",
+          "md5": "20475674bb91912b3e365a738e248632"
+        }
+      ]
+    }
+  ]
+}

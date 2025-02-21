@@ -1,0 +1,9 @@
+plugins {
+	id 'base'
+	id 'net.apollofops.first.VendorTools' version "2025.0.1-SNAPSHOT"
+}
+
+vendordep {
+	mavenRepoUrl = "$rootDir/repos"
+	enableCombiner = true
+}

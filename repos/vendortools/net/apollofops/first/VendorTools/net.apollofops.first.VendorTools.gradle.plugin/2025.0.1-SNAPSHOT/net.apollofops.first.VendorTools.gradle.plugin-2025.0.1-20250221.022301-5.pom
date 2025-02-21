@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.apollofops.first.VendorTools</groupId>
+  <artifactId>net.apollofops.first.VendorTools.gradle.plugin</artifactId>
+  <version>2025.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>VendorTools</name>
+  <description>A better build system for WPILib Vendor dependencies.</description>
+  <dependencies>
+    <dependency>
+      <groupId>net.apollofops</groupId>
+      <artifactId>VendorTools</artifactId>
+      <version>2025.0.1-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>

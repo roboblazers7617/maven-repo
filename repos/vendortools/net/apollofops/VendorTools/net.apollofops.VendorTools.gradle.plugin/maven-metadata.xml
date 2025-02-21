@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>net.apollofops.VendorTools</groupId>
+  <artifactId>net.apollofops.VendorTools.gradle.plugin</artifactId>
+  <versioning>
+    <latest>2025.0.1-SNAPSHOT</latest>
+    <release>2025.0.0</release>
+    <versions>
+      <version>2025.0.0</version>
+      <version>2025.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20250219131812</lastUpdated>
+  </versioning>
+</metadata>
