@@ -41,9 +41,9 @@ jobs:
       git-name: ${{ needs.generate-token.outputs.git-name }}
       git-email: ${{ needs.generate-token.outputs.git-email }}
       github-app-id: ${{ vars.BLAZER_BOT_APP_ID }}
-      maven-name: ${{ github.event.client-payload.mavenName }}
-      artifact-pattern: ${{ github.event.client-payload.artifactPattern }}
-      artifact-repository: ${{ github.event.client-payload.repositoryName }}
-      artifact-run-id: ${{ github.event.client-payload.artifactRunId }}
+      maven-name: ${{ github.event.client_payload.mavenName }}
+      artifact-pattern: ${{ github.event.client_payload.artifactPattern }}
+      artifact-repository: ${{ github.event.client_payload.repositoryName }}
+      artifact-run-id: ${{ github.event.client_payload.artifactRunId }}
     secrets:
       github-app-private-key: ${{ secrets.BLAZER_BOT_PRIVATE_KEY }}
