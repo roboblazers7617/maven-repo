@@ -29,7 +29,7 @@ jobs:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
 
   update:
-    uses: CoffeeCoder1/VendorTools/.github/workflows/update-maven.yml@4f9997a0e5026c685892d510ff537c6c2e69c17e
+    uses: CoffeeCoder1/VendorTools/.github/workflows/update-maven.yml@cf382d03f8c08dd1a7ad131db8f7671a5be3c4ff
     needs: [generate-token]
 
     permissions:
@@ -40,7 +40,6 @@ jobs:
     with:
       git-name: ${{ needs.generate-token.outputs.git-name }}
       git-email: ${{ needs.generate-token.outputs.git-email }}
-      client-payload: ${{ github.event.client_payload }}
       github-app-id: ${{ vars.BLAZER_BOT_APP_ID }}
     secrets:
       github-app-private-key: ${{ secrets.BLAZER_BOT_PRIVATE_KEY }}
