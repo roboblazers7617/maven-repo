@@ -32,6 +32,11 @@ jobs:
   update:
     uses: CoffeeCoder1/VendorTools/.github/workflows/update-maven.yml@8efe9ea47ba369048d36c56a456f955a60695ac3
     needs: [generate-token]
+
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
     with:
       git-name: ${{ needs.generate-token.outputs.git-name }}
       git-email: ${{ needs.generate-token.outputs.git-email }}
