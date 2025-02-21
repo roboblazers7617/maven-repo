@@ -1,9 +1,6 @@
 pluginManagement {
 	repositories {
 		mavenLocal()
-		maven {
-			url = file('repos/vendortools')
-		}
 		gradlePluginPortal()
 		mavenCentral()
 	}
