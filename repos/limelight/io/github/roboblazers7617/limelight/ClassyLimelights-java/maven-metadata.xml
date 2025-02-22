@@ -3,11 +3,12 @@
   <groupId>io.github.roboblazers7617.limelight</groupId>
   <artifactId>ClassyLimelights-java</artifactId>
   <versioning>
-    <latest>0.0.0</latest>
-    <release>0.0.0</release>
+    <latest>test</latest>
+    <release>test</release>
     <versions>
       <version>0.0.0</version>
+      <version>test</version>
     </versions>
-    <lastUpdated>20250216025005</lastUpdated>
+    <lastUpdated>20250222011759</lastUpdated>
   </versioning>
 </metadata>
