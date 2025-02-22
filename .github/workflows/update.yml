@@ -44,5 +44,6 @@ jobs:
       artifact-pattern: ${{ github.event.client_payload.artifactPattern }}
       artifact-repository: ${{ github.event.client_payload.repositoryName }}
       artifact-run-id: ${{ github.event.client_payload.artifactRunId }}
+      release-version: ${{ github.event.client_payload.releaseVersion }}
     secrets:
       github-app-private-key: ${{ secrets.BLAZER_BOT_PRIVATE_KEY }}
