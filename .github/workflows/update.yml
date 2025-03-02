@@ -29,7 +29,7 @@ jobs:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
 
   update:
-    uses: CoffeeCoder1/VendorTools/.github/workflows/update-maven.yml@2025.0.3
+    uses: CoffeeCoder1/VendorTools/.github/workflows/update-maven.yml@2025.1.0
     needs: [generate-token]
 
     permissions:
