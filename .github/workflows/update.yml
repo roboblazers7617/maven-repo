@@ -28,9 +28,16 @@ jobs:
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
 
+  turnstyle:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Wait for other runs to finish with turnstyle
+        uses: softprops/turnstyle@v2.3.1
+
   update:
     uses: CoffeeCoder1/VendorTools/.github/workflows/update-maven.yml@2025.1.1
-    needs: [generate-token]
+    needs: [turnstyle, generate-token]
 
     permissions:
       contents: write   # to push git commits
