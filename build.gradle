@@ -1,6 +1,6 @@
 plugins {
 	id 'base'
-	id 'net.apollofops.first.VendorTools' version "2025.1.1"
+	id 'net.apollofops.first.VendorTools' version "2025.1.2"
 }
 
 vendordep {
